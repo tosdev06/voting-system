@@ -1,0 +1,99 @@
+.profile-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.profile-sidebar {
+    width: 250px;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.profile-content {
+    flex: 1;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.profile-picture {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #3498db;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-info h3 {
+    margin-bottom: 5px;
+}
+
+.profile-info p {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.profile-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-section h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.voting-history {
+    margin-top: 20px;
+}
+
+.vote-record {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.vote-record:hover {
+    border-color: #3498db;
+    background-color: #f8fafc;
+}
+
+.vote-info h4 {
+    margin-bottom: 5px;
+}
+
+.vote-date {
+    color: #777;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+    }
+    
+    .profile-sidebar {
+        width: 100%;
+    }
+}
